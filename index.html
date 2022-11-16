@@ -10,24 +10,19 @@
 
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  <section>
-    <div>
+  <section class="product-preview">
+    <div class="product-image">
+      <picture>
+        <source media="(min-width:1440px)" srcset="images/image-product-desktop.jpg">
+        <source media="(min-width:375px)" srcset="images/image-product-mobile.jpg">
+        <img src="images/image-product-desktop.jpg" alt="perfume image">
+      </picture>
+    </div>
+    <div class="product-details">
       Preview
 
       Gabrielle Essence Eau De Parfum
